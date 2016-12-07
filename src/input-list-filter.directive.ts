@@ -13,7 +13,8 @@ export interface IScopeInputListFilter extends angular.IScope {
     listFiltered: any[];
     filterterKeys: any[],
     placeholder: string,
-    limit: number
+    limit: number,
+    model: string,
 }
 
 export class InputListFilterDirective implements ng.IDirective {
