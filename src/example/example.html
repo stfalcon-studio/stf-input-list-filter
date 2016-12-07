@@ -1,0 +1,6 @@
+<input ng-model="value" placeholder'It was copied to filter'> <br>
+<stf-input-list-filter ng-model="value" placeholder="Filter" list-source="$ctrl.addresses" limit="50" list-filtered="$ctrl.addressFiltered" filterter-keys="['description']"></stf-input-list-filter>
+
+<ul>
+    <li ng-repeat="address in $ctrl.addressFiltered  track by address.id">{{address.description}}</li>
+</ul>
