@@ -1,6 +1,6 @@
 {
   "name": "stf-input-list-filter",
-  "version": "0.5.9",
+  "version": "0.5.10",
   "description": "input for filtering of list",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
