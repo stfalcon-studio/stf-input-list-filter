@@ -18,7 +18,7 @@ export interface IScopeInputListFilter extends angular.IScope {
 }
 
 export class InputListFilterDirective implements ng.IDirective {
-    public template: string = `<input placeholder="{{::placeholder}}" type="search" class="np-input-list-filter _md-text" ng-keydown="$event.stopPropagation()">`;
+    public template: string = `<input placeholder="{{::placeholder}}" ng-model="model" type="search" class="np-input-list-filter _md-text" >`;
     public restrict: string = 'E';
     public scope: any = {
         listSource: '<',
@@ -76,7 +76,7 @@ export class InputListFilterDirective implements ng.IDirective {
         })
             .throttleTime(this._NP_INPUT_LIST_FILTER_THROTTLE_TIME)
             .subscribe((val) => {
-                jqInput.val(val);
+                scope.model = val;
                 this.filterList(val, scope);
                 scope.$applyAsync();
             });
