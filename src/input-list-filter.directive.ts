@@ -1,13 +1,14 @@
 /**
  * Created by oleg on 14.06.2016.
  */
+import * as angular from "angular";
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/throttleTime';
 import 'rxjs/add/observable/fromEvent';
 import 'rxjs/add/observable/of';
+import * as _ from "lodash";
 
-const _: _.LoDashStatic = require("lodash");
 export interface IScopeInputListFilter extends angular.IScope {
     listSource: any[];
     listFiltered: any[];
@@ -17,7 +18,7 @@ export interface IScopeInputListFilter extends angular.IScope {
     model: string,
 }
 
-export class InputListFilterDirective implements ng.IDirective {
+export class InputListFilterDirective implements angular.IDirective {
     public template: string = `<input placeholder="{{::placeholder}}" ng-model="model" type="search" class="np-input-list-filter _md-text" >`;
     public restrict: string = 'E';
     public scope: any = {

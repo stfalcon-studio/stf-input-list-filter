@@ -1,3 +1,4 @@
+import * as angular from "angular";
 import {InputListFilterDirective} from "./input-list-filter.directive";
 interface IInputListFilterEnvironmentScope extends angular.IScope
 {
