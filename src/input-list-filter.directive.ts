@@ -43,7 +43,7 @@ export class InputListFilterDirective implements angular.IDirective {
         }
 
         scope.$watchCollection(() => scope.listSource, () => {
-            this.filterList(null, scope);
+            this.filterList(jqInput.val() || null, scope);
         });
 
 
