@@ -36,19 +36,19 @@ export class InputListFilterDirective implements angular.IDirective {
 
     link(scope: IScopeInputListFilter, element: JQuery, attrs, ngModel: angular.INgModelController) {
         let jqInput = element.find('input');
-        let observableInput: Observable<any> = Observable.fromEvent(jqInput, 'keyup').throttleTime(this._NP_INPUT_LIST_FILTER_THROTTLE_TIME);
+        let observableInput: Observable<any> = Observable.fromEvent(<any>jqInput, 'keyup').throttleTime(this._NP_INPUT_LIST_FILTER_THROTTLE_TIME);
 
         if (!_.isArray(scope.listFiltered)) {
             scope.listFiltered = [];
         }
 
         scope.$watchCollection(() => scope.listSource, () => {
-            this.filterList(jqInput.val() || null, scope);
+            this.filterList(<string>jqInput.val() || null, scope);
         });
 
 
         let inputSubscription = observableInput.subscribe((event: any) => {
-            this.filterList(jqInput.val(), scope);
+            this.filterList(<string>jqInput.val(), scope);
 
             if(ngModel){
                 ngModel.$setViewValue(jqInput.val());

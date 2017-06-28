@@ -1,6 +1,6 @@
 {
   "name": "stf-input-list-filter",
-  "version": "0.5.17",
+  "version": "0.5.18",
   "description": "input for filtering of list",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,17 +26,17 @@
   },
   "homepage": "https://github.com/stfalcon-studio/stf-input-list-filter#readme",
   "dependencies": {
+    "lodash": "^4.16.4",
+    "rxjs": "^5.4.1",
+    "jquery": "^2.2.0"
+  },
+  "devDependencies": {
     "@types/angular": "1.6.21",
     "@types/angular-translate": "~2.4.34",
     "@types/lodash": "^4.14.55",
     "@types/node": "^6.0.46",
     "angular": "^1.5.8",
     "angular-translate": "^2.12.1",
-    "jquery": "^3.1.1",
-    "lodash": "^4.16.4",
-    "rxjs": "~5.0.0-beta"
-  },
-  "devDependencies": {
     "@types/angular-mocks": "^1.5.9",
     "@types/jasmine": "^2.5.46",
     "angular-mocks": "~1.5.0",
