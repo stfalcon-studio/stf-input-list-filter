@@ -1,7 +1,7 @@
 stf-input-list-filter Directive (list filtration). 
 ============================================================================================================================
 
-Directive for filtering list of items. You can easy take list of objects, choose value of property for comparation, input text in input control and you get list with objects which fit
+Directive for filtering list of items for Angular1. You can easy take list of objects, choose value of property for comparison, input text in the input control and you get the appropriate filtered list of objects.
 
 ### Атрибути
 - [x]  listSource       - collection
