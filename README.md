@@ -1,7 +1,7 @@
 stf-input-list-filter Directive (list filtration). 
 ============================================================================================================================
 
-Directive for filtering list item. You can easy take list of object, choose value of property for comparation and you get list with objects you fit
+Directive for filtering list item. You can easy take list of object, choose value of property for comparation, input text in input control and you get list with objects you fit
 
 ### Атрибути
 - [x]  listSource       - collection
