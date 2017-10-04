@@ -1,5 +1,5 @@
-stf-input-list-filter Directive (list filtration)
-==================================================
+stf-input-list-filter Directive (list filtration). You can easy take list of object, choose value of property for comparation and you get list with objects you feet
+============================================================================================================================
 
 Directive for filtering list item
 
